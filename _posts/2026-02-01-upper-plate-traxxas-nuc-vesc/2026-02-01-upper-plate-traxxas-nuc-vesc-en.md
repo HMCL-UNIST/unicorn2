@@ -15,8 +15,8 @@ This upper plate is designed for use with a NUC as the onboard PC, mounted on th
 ![Upper Plate 3D Model](/assets/img/posts/upper-plate-traxxas-nuc-vesc/image.png)
 
 **CAD File Downloads:**
-- [F1tenth_NUC.SLDPRT](/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC.sldprt)
-- [F1tenth_NUC.STL](/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC.stl)
+- [F1tenth_NUC.SLDPRT]({{ site.baseurl }}/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC.sldprt)
+- [F1tenth_NUC.STL]({{ site.baseurl }}/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC.stl)
 
 ---
 
@@ -39,8 +39,8 @@ If you want to minimize the standoff bolt/nut length to lower the center of grav
 ![Easy Battery Version 2](/assets/img/posts/upper-plate-traxxas-nuc-vesc/image-2.png)
 
 **CAD File Downloads:**
-- [F1tenth_NUC_easy_battery.SLDPRT](/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC_easy_battery.sldprt)
-- [F1tenth_NUC_easy_battery.STL](/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC_easy_battery.stl)
+- [F1tenth_NUC_easy_battery.SLDPRT]({{ site.baseurl }}/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC_easy_battery.sldprt)
+- [F1tenth_NUC_easy_battery.STL]({{ site.baseurl }}/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC_easy_battery.stl)
 
 This version has a wider battery opening and added chamfers for easier battery replacement.
 

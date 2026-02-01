@@ -15,8 +15,8 @@ This upper plate is designed for use with an Orin NX as the onboard PC, mounted 
 ![Upper Plate 3D Model](/assets/img/posts/upper-plate-traxxas-orin-nx-vesc/image.png)
 
 **CAD File Downloads:**
-- [F1tenth_Orin_NX.SLDPRT](/assets/img/posts/upper-plate-traxxas-orin-nx-vesc/F1tenth_Orin_NX.sldprt)
-- [F1tenth_Orin_NX.STL](/assets/img/posts/upper-plate-traxxas-orin-nx-vesc/F1tenth_Orin_NX.stl)
+- [F1tenth_Orin_NX.SLDPRT]({{ site.baseurl }}/assets/img/posts/upper-plate-traxxas-orin-nx-vesc/F1tenth_Orin_NX.sldprt)
+- [F1tenth_Orin_NX.STL]({{ site.baseurl }}/assets/img/posts/upper-plate-traxxas-orin-nx-vesc/F1tenth_Orin_NX.stl)
 
 ---
 

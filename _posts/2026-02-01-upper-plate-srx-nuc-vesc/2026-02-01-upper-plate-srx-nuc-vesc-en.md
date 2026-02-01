@@ -15,8 +15,8 @@ This is the basic upper plate designed to be mounted on the SRX chassis.
 ![Upper Plate 3D Model](/assets/img/posts/upper-plate-srx-nuc-vesc/image.png)
 
 **CAD File Downloads:**
-- [SRX8_NUC_deck.SLDPRT](/assets/img/posts/upper-plate-srx-nuc-vesc/SRX8_NUC_deck.sldprt)
-- [SRX8_NUC_deck.STL](/assets/img/posts/upper-plate-srx-nuc-vesc/SRX8_NUC_deck.stl)
+- [SRX8_NUC_deck.SLDPRT]({{ site.baseurl }}/assets/img/posts/upper-plate-srx-nuc-vesc/SRX8_NUC_deck.sldprt)
+- [SRX8_NUC_deck.STL]({{ site.baseurl }}/assets/img/posts/upper-plate-srx-nuc-vesc/SRX8_NUC_deck.stl)
 
 ---
 

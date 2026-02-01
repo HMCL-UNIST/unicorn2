@@ -15,8 +15,8 @@ PC로 NUC를 사용할 경우에 해당하며, Traxxas Chassis 위에 올릴 수
 ![Upper Plate 3D 모델](/assets/img/posts/upper-plate-traxxas-nuc-vesc/image.png)
 
 **CAD 파일 다운로드:**
-- [F1tenth_NUC.SLDPRT](/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC.sldprt)
-- [F1tenth_NUC.STL](/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC.stl)
+- [F1tenth_NUC.SLDPRT]({{ site.baseurl }}/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC.sldprt)
+- [F1tenth_NUC.STL]({{ site.baseurl }}/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC.stl)
 
 ---
 
@@ -39,8 +39,8 @@ NUC 자체의 width가 큰 편이기 때문에, 배터리를 수월하게 넣기
 ![Easy Battery 버전 2](/assets/img/posts/upper-plate-traxxas-nuc-vesc/image-2.png)
 
 **CAD 파일 다운로드:**
-- [F1tenth_NUC_easy_battery.SLDPRT](/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC_easy_battery.sldprt)
-- [F1tenth_NUC_easy_battery.STL](/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC_easy_battery.stl)
+- [F1tenth_NUC_easy_battery.SLDPRT]({{ site.baseurl }}/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC_easy_battery.sldprt)
+- [F1tenth_NUC_easy_battery.STL]({{ site.baseurl }}/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC_easy_battery.stl)
 
 배터리를 더 수월하게 교체할 수 있도록 배터리 입구가 더 넓어지고, 모따기가 추가된 버전입니다.
 

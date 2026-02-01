@@ -9,7 +9,7 @@ When converting Notion content to Jekyll posts, **always follow these rules**:
 1. ✅ **바로 수정하지 말 것** — 먼저 제목을 추천하고, 글 다듬기 여부를 물어본 뒤 수정
 2. ✅ **작성자(author)를 반드시 물어볼 것** (먼저 `_data/authors.yml`에서 유사 작성자 확인)
 3. ✅ **첫 번째 이미지**를 front matter의 `image: path:`로 대표 이미지 설정
-4. ✅ **내부 포스트 링크**에는 `{{ site.baseurl }}` 사용 (이미지 경로에는 불필요)
+4. ✅ **내부 포스트 링크 및 정적 파일 다운로드 링크**에는 `{{ site.baseurl }}` 사용 (이미지 경로에는 불필요)
 5. ✅ **어투 통일**: `~했습니다`, `~됩니다` 체로 작성
 6. ✅ **외부 URL**은 `[URL](URL)` 형식으로 클릭 가능하게 작성
 7. ✅ Copy media files to appropriate folders in the project
@@ -247,6 +247,19 @@ Notion HTML에 마무리 섹션이 없으면 **직접 만들어서 추가**한�
 [펌웨어 업그레이드](/posts/vesc-firmware-upgrade/)
 ```
 
+### 정적 파일 다운로드 링크 — `{{ site.baseurl }}` 필수
+
+이미지가 아닌 정적 파일(CAD, STL, PDF 등)의 다운로드 링크에도 반드시 `{{ site.baseurl }}`을 붙인다.
+Chirpy 테마는 이미지(`![alt](/path)`) 경로만 자동으로 baseurl을 처리하며, 일반 링크(`[text](/path)`)는 처리하지 않는다:
+
+```markdown
+<!-- ✅ Correct -->
+[F1tenth_NUC.STL]({{ site.baseurl }}/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC.stl)
+
+<!-- ❌ Wrong (baseurl 누락) -->
+[F1tenth_NUC.STL](/assets/img/posts/upper-plate-traxxas-nuc-vesc/F1tenth_NUC.stl)
+```
+
 ### 이미지 경로 — `{{ site.baseurl }}` 불필요
 
 이미지 경로에는 `{{ site.baseurl }}`을 **붙이지 않는다**:
@@ -398,6 +411,7 @@ Before finalizing a converted post, verify:
 - [ ] **대표 이미지**: 첫 번째 이미지를 `image: path:`에 설정
 - [ ] **어투 통일**: `~했습니다`, `~됩니다` 체로 작성
 - [ ] **내부 포스트 링크**: `{{ site.baseurl }}/posts/slug/` 형식 사용
+- [ ] **정적 파일 다운로드 링크**: `{{ site.baseurl }}/assets/img/posts/slug/file.stl` 형식 사용
 - [ ] **이미지 경로**: `{{ site.baseurl }}` 없이 `/assets/img/posts/slug/...`
 - [ ] **외부 URL**: `[URL](URL)` 형식으로 클릭 가능하게
 - [ ] **Images copied**: Notion export → `assets/img/posts/[post-slug]/`
