@@ -7,13 +7,17 @@ This guide provides rules and best practices for converting Notion HTML exports 
 When converting Notion content to Jekyll posts, **always follow these rules**:
 
 1. ✅ **바로 수정하지 말 것** — 먼저 제목을 추천하고, 글 다듬기 여부를 물어본 뒤 수정
-2. ✅ **작성자(author)를 반드시 물어볼 것**
+2. ✅ **작성자(author)를 반드시 물어볼 것** (먼저 `_data/authors.yml`에서 유사 작성자 확인)
 3. ✅ **첫 번째 이미지**를 front matter의 `image: path:`로 대표 이미지 설정
 4. ✅ **내부 포스트 링크**에는 `{{ site.baseurl }}` 사용 (이미지 경로에는 불필요)
 5. ✅ **어투 통일**: `~했습니다`, `~됩니다` 체로 작성
 6. ✅ **외부 URL**은 `[URL](URL)` 형식으로 클릭 가능하게 작성
 7. ✅ Copy media files to appropriate folders in the project
 8. ✅ Verify image filenames match markdown references
+9. ✅ **포스트는 폴더 구조로 생성**하고, **영문 번역본(-en.md)**을 반드시 함께 만든다
+10. ✅ 모든 포스트에 `lang` / `lang_ref`를 포함한다
+11. ✅ 카테고리는 **상위/하위** 구조를 사용한다 (가능하면 2단계)
+12. ✅ 태그는 **복수 가능**하며 1개 이상일 수 있다
 
 ---
 
@@ -28,7 +32,12 @@ Notion 내보내기 폴더에서 HTML 파일을 읽는다.
 ```
 
 ### Step 2: 작성자 확인 (필수)
-**반드시 사용자에게 author를 물어본다.**
+**반드시 사용자에게 author를 물어본다.**  
+먼저 `_data/authors.yml`에서 **비슷한 작성자**가 있는지 확인하고,
+없다면 **새 작성자를 추가할지** 사용자에게 물어본다.
+
+> Notion HTML에서 작성자가 여러 명인 경우, front matter에 `authors` 배열로 저장한다.
+> 예: `authors: [jeongsang-ryu, hyeongjoon-yang]`
 ```
 이 포스트의 작성자(author)는 누구인가요?
 ```
@@ -48,7 +57,7 @@ Notion 내보내기 폴더에서 HTML 파일을 읽는다.
 
 ### Step 4: 이미지 복사
 - Notion 내보내기 폴더에서 이미지를 찾는다
-- `/home/js/unicorn-racing/assets/img/posts/[post-slug]/`로 복사
+- `assets/img/posts/[post-slug]/`로 복사
 - 파일명: 공백 제거, 하이픈 사용, 소문자
 
 ### Step 5: 포스트 작성
@@ -56,27 +65,35 @@ Notion 내보내기 폴더에서 HTML 파일을 읽는다.
 - 어투를 `~했습니다`, `~됩니다`로 통일
 - Chirpy prompt 블록 적절히 활용
 - 관련 포스트 간 링크 연결
+- **폴더 구조로 저장** (아래 File Structure 참고)
+- **영문 번역본(-en.md) 생성** 및 `lang_ref` 동일하게 유지
+- 카테고리는 **상위 → 하위** 순서로 배열 (예: `[Hardware, Manual]`)
+- 태그는 1개 이상 가능 (필요 시 복수 태그 추가)
 
 ### Step 6: 검증
 - 모든 이미지 파일이 존재하는지 확인
 - 파일명이 markdown 참조와 일치하는지 확인
+- `lang: ko` / `lang: en` 모두 존재하는지 확인
 
 ---
 
 ## 📁 File Structure
 
 ### Post Files
-- **Location**: `/home/js/unicorn-racing/_posts/`
-- **Naming**: `YYYY-MM-DD-title-in-lowercase.md`
+- **Location**: `_posts/`
+- **Folder Naming**: `YYYY-MM-DD-title-in-lowercase/`
+- **File Naming**:
+  - Korean: `YYYY-MM-DD-title-in-lowercase.md`
+  - English: `YYYY-MM-DD-title-in-lowercase-en.md`
   - Use hyphens (`-`) instead of spaces
   - Remove special characters except hyphens
   - Examples:
-    - ✅ `2026-01-30-vesc-general-tab.md`
-    - ✅ `2025-05-19-2025-icra-roboracer-2nd-place.md`
-    - ❌ `2025-05-19-2025 ICRA RoboRacer 2nd Place.md`
+    - ✅ `_posts/2026-01-30-vesc-general-tab/2026-01-30-vesc-general-tab.md`
+    - ✅ `_posts/2026-01-30-vesc-general-tab/2026-01-30-vesc-general-tab-en.md`
+    - ❌ `_posts/2026-01-30-vesc-general-tab.md`
 
 ### Image Files
-- **Location**: `/home/js/unicorn-racing/assets/img/posts/[post-slug]/`
+- **Location**: `assets/img/posts/[post-slug]/`
 - **Naming**: Use hyphens instead of spaces
   - ✅ `image-1.png`, `result-graph.png`
   - ❌ `image 1.png`, `result graph.png`
@@ -104,7 +121,7 @@ Notion에서 내보낸 파일은 보통 아래 경로에 있다:
         [페이지명].html
         image1.png
         image2.png
-```
+  ```
 
 ---
 
@@ -121,6 +138,8 @@ categories: [Hardware, Manual]
 tags: [VESC, motor-control, manual]
 image:
   path: /assets/img/posts/vesc-general-tab/general-tab.png
+lang: ko
+lang_ref: vesc-general-tab
 ---
 ```
 
@@ -132,6 +151,8 @@ image:
 | `date` | `YYYY-MM-DD HH:MM:SS +0900` 형식 |
 | `categories` | `[Category1, Category2]` 형식 |
 | `tags` | `[tag1, tag2, tag3]` 형식 |
+| `lang` | `ko` 또는 `en` |
+| `lang_ref` | 한/영 묶음용 공통 키 (슬러그와 동일 권장) |
 
 ### Optional Fields
 | Field | Description |
@@ -151,8 +172,12 @@ image:
 
 ### Common Categories
 - `Hardware` - VESC, 모터, 센서 등 하드웨어 관련
-- `Manual` - 설정 가이드, 튜토리얼
+- `Manual` - 설정 가이드, 튜토리얼 (보통 하위 카테고리로 사용)
 - `News` - 대회 결과, 이벤트, 공지사항
+
+> 카테고리는 **상위/하위 2단계**가 있으면 `[상위, 하위]` 순서로 사용한다.  
+> 하위가 없으면 1개만 사용해도 된다.  
+> 예: `[Hardware, Manual]` 또는 `[News]`
 
 ### Common Tags
 - Hardware: `VESC`, `IMU`, `motor-control`, `hall-sensor`, `servo`
@@ -308,6 +333,7 @@ Chirpy 테마에서는 특별한 강조 블록을 사용할 수 있다. Notion�
     - step: 1
       title: "VESC Tool 다운로드"
       url: "/posts/vesc-tools-download/"
+      lang_ref: "vesc-tools-download"
       description: "VESC Tool 설치 및 VESC 연결 방법"
 ```
 
@@ -315,6 +341,7 @@ Chirpy 테마에서는 특별한 강조 블록을 사용할 수 있다. Notion�
 1. `_data/wiki/getting-started.yml`에서 해당 section을 찾는다
 2. 새 step을 추가한다 (step 번호 순서 맞추기)
 3. `url`은 `/posts/[post-slug]/` 형식으로 작성한다
+4. `lang_ref`를 추가하면 현재 언어에 맞게 링크가 자동 연결된다
 
 ---
 
@@ -325,7 +352,7 @@ Chirpy 테마에서는 특별한 강조 블록을 사용할 수 있다. Notion�
 #### 1. Copy Images from Notion Export
 ```bash
 # Source: ~/Downloads/[UUID]_ExportBlock-.../개인 페이지 & 공유된 페이지/[페이지명]/
-# Destination: /home/js/unicorn-racing/assets/img/posts/[post-slug]/
+# Destination: assets/img/posts/[post-slug]/
 ```
 
 #### 2. Rename Images
@@ -364,6 +391,7 @@ image:
 Before finalizing a converted post, verify:
 
 - [ ] **작성자 확인**: author를 사용자에게 물어봤는가?
+- [ ] **작성자 매핑**: `_data/authors.yml`에 있는지 확인했는가?
 - [ ] **제목 추천**: 블로그 스타일 제목을 추천하고 승인받았는가?
 - [ ] **Filename**: `YYYY-MM-DD-title.md` format
 - [ ] **Front matter**: title, author, date, categories, tags, image 포함
@@ -378,6 +406,10 @@ Before finalizing a converted post, verify:
 - [ ] **Chirpy prompts**: Notion callout → `{: .prompt-warning }` 등으로 변환
 - [ ] **Code blocks**: Use proper markdown syntax with language specifiers
 - [ ] **Tables**: Convert to markdown table format
+- [ ] **폴더 구조**: `_posts/slug/slug.md` 형태인가?
+- [ ] **영문 번역본**: `-en.md`가 존재하는가?
+- [ ] **언어 메타**: `lang` / `lang_ref`가 한/영 모두에 존재하는가?
+- [ ] **카테고리 구조**: 상위/하위 순서가 맞는가?
 
 ---
 
@@ -481,7 +513,7 @@ def example():
 ### Image Not Showing
 1. Check filename: `image-1.png` vs `image 1.png`
 2. Check path: `/assets/img/posts/[slug]/image.png`
-3. Check file exists: `ls -la /home/js/unicorn-racing/assets/img/posts/[post-slug]/`
+3. Check file exists: `ls -la assets/img/posts/[post-slug]/`
 4. Check permissions: files should be readable
 
 ---
@@ -532,8 +564,9 @@ VESC의 **Motor Settings - General** 탭에서는 모터의 회전 방향과 전
 ```
 
 ### Files Created
-1. `/home/js/unicorn-racing/_posts/2026-01-30-vesc-general-tab.md`
-2. `/home/js/unicorn-racing/assets/img/posts/vesc-general-tab/general-tab.png`
+1. `_posts/2026-01-30-vesc-general-tab/2026-01-30-vesc-general-tab.md`
+2. `_posts/2026-01-30-vesc-general-tab/2026-01-30-vesc-general-tab-en.md`
+3. `assets/img/posts/vesc-general-tab/general-tab.png`
 
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: "2023 ICCAS Korea Championship - 1st Place"
+title: 2023 ICCAS F1TENTH Korea Championship - 1st Place
+author: yunho-lee
 date: 2023-10-17 09:00:00 +0900
 categories: [news]
 tags: [competition, f1tenth, iccas, champion]
@@ -9,9 +10,9 @@ lang: en
 lang_ref: 2023-iccas-korea-championship-1st-place
 ---
 
-We achieved the 1st prize for the F1-Tenth Korea Championship 2023!
+We achieved **1st place** at the F1TENTH Korea Championship 2023!
 
-**Location:** SonoCalm Yeosu at Yeosu, Korea
+**Location:** SonoCalm Yeosu, Yeosu, Korea
 
 More information: [https://korea-race23.f1tenth.org/](https://korea-race23.f1tenth.org/)
 
@@ -22,3 +23,7 @@ More information: [https://korea-race23.f1tenth.org/](https://korea-race23.f1ten
 ![Award Ceremony](/assets/img/posts/2023-iccas-korea-championship/image-2.png)
 
 ![Team Photo](/assets/img/posts/2023-iccas-korea-championship/ICCAS2_0761.jpg)
+
+## Closing
+
+We won the 2023 ICCAS F1TENTH Korea Championship, proving our capabilities in the domestic autonomous racing scene.

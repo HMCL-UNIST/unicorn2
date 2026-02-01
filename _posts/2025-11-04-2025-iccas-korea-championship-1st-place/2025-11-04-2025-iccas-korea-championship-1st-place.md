@@ -1,25 +1,29 @@
 ---
-title: "2025 ICCAS Korea Championship - 1st Place"
+title: 2025 ICCAS F1TENTH Autonomous Racing Competition 우승
+author: yunho-lee
 date: 2025-11-04 09:00:00 +0900
 categories: [news]
 tags: [competition, f1tenth, iccas, champion]
 image:
   path: /assets/img/posts/2025-iccas-korea-championship/67_Banquet_Th.jpg
-  # alt: image alternative text
 lang: ko
 lang_ref: 2025-iccas-korea-championship-1st-place
 ---
 
-We achieved 1st place at the 2025 ICCAS F1TENTH Autonomous Racing Competition!
+2025 ICCAS F1TENTH Autonomous Racing Competition에서 **우승**을 달성했습니다!
 
-**Location:** Songdo ConvensiA, Incheon, Korea
+**개최지:** 송도컨벤시아, 대한민국 인천
 
-More information: [https://me.unist.ac.kr/eng/team-unicorn-advisor-prof-cheolhyeon-kwon-finishes-in-1st-place-at-2025-iccas-f1tenth-autonomous-racing-competition/](https://me.unist.ac.kr/eng/team-unicorn-advisor-prof-cheolhyeon-kwon-finishes-in-1st-place-at-2025-iccas-f1tenth-autonomous-racing-competition/)
+관련 기사: [https://me.unist.ac.kr/eng/team-unicorn-advisor-prof-cheolhyeon-kwon-finishes-in-1st-place-at-2025-iccas-f1tenth-autonomous-racing-competition/](https://me.unist.ac.kr/eng/team-unicorn-advisor-prof-cheolhyeon-kwon-finishes-in-1st-place-at-2025-iccas-f1tenth-autonomous-racing-competition/)
 
-![Competition](/assets/img/posts/2025-iccas-korea-championship/image.png)
+![대회 현장](/assets/img/posts/2025-iccas-korea-championship/image.png)
 
-![Team Photo](/assets/img/posts/2025-iccas-korea-championship/권철현-교수님.png)
+![권철현 교수님](/assets/img/posts/2025-iccas-korea-championship/professor-kwon.png)
 
-![Award Ceremony 1](/assets/img/posts/2025-iccas-korea-championship/image-1.png)
+![시상식 1](/assets/img/posts/2025-iccas-korea-championship/image-1.png)
 
-![Award Ceremony 2](/assets/img/posts/2025-iccas-korea-championship/67_Banquet_Th.jpg)
+![시상식 2](/assets/img/posts/2025-iccas-korea-championship/67_Banquet_Th.jpg)
+
+## 마무리
+
+2025년 ICCAS F1TENTH Autonomous Racing Competition에서 우승하며 팀의 지속적인 성장을 증명했습니다.
