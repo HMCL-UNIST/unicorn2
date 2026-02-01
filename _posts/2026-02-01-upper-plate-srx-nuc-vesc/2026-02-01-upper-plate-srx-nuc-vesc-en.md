@@ -2,7 +2,7 @@
 title: Upper Plate Design & Mounting Guide (SRX + NUC + VESC)
 author: yunho-lee
 date: 2026-02-01 11:00:00 +0900
-categories: [Hardware, Design]
+categories: [resources]
 tags: [3d-printing, srx, nuc, vesc, upper-plate]
 image:
   path: /assets/img/posts/upper-plate-srx-nuc-vesc/image.png

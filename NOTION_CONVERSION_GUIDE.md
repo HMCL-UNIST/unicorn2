@@ -16,8 +16,12 @@ When converting Notion content to Jekyll posts, **always follow these rules**:
 8. ✅ Verify image filenames match markdown references
 9. ✅ **포스트는 폴더 구조로 생성**하고, **영문 번역본(-en.md)**을 반드시 함께 만든다
 10. ✅ 모든 포스트에 `lang` / `lang_ref`를 포함한다
-11. ✅ 카테고리는 **상위/하위** 구조를 사용한다 (가능하면 2단계)
-12. ✅ 태그는 **복수 가능**하며 1개 이상일 수 있다
+11. ✅ Notion의 **상위** 속성은 항상 `categories`에 넣는다
+12. ✅ Notion의 **하위** 속성이 있으면 `categories`에 **2개 모두** 넣는다
+13. ✅ `categories`는 **Notion에 있는 대소문자 그대로** 사용한다 (제안/수정 금지)
+14. ✅ 태그는 **복수 가능**하며 1개 이상일 수 있다
+15. ✅ Notion의 `tag` 속성은 **모두 그대로** 가져온다 (대소문자 유지)
+16. ✅ 필요 시 **추가 태그**를 더할 수 있다
 
 ---
 
@@ -67,8 +71,9 @@ Notion 내보내기 폴더에서 HTML 파일을 읽는다.
 - 관련 포스트 간 링크 연결
 - **폴더 구조로 저장** (아래 File Structure 참고)
 - **영문 번역본(-en.md) 생성** 및 `lang_ref` 동일하게 유지
-- 카테고리는 **상위 → 하위** 순서로 배열 (예: `[Hardware, Manual]`)
-- 태그는 1개 이상 가능 (필요 시 복수 태그 추가)
+- 카테고리는 **Notion 상위/하위 그대로** 배열 (예: `[상위, 하위]`)
+- 카테고리는 **제안하지 말고** Notion 값을 그대로 사용
+- 태그는 Notion에 있는 것들을 **모두 그대로** 가져오되, 필요 시 추가 가능
 
 ### Step 6: 검증
 - 모든 이미지 파일이 존재하는지 확인
@@ -171,21 +176,13 @@ image:
 > ⚠️ `image.path`에는 `{{ site.baseurl }}`을 **붙이지 않는다**. Jekyll이 자동으로 처리한다.
 
 ### Common Categories
-- `Hardware` - VESC, 모터, 센서 등 하드웨어 관련
-- `Manual` - 설정 가이드, 튜토리얼 (보통 하위 카테고리로 사용)
-- `News` - 대회 결과, 이벤트, 공지사항
-
-> 카테고리는 **상위/하위 2단계**가 있으면 `[상위, 하위]` 순서로 사용한다.  
-> 하위가 없으면 1개만 사용해도 된다.  
-> 예: `[Hardware, Manual]` 또는 `[News]`
+> 카테고리는 **Notion 값 그대로** 사용한다.  
+> 상위/하위가 있으면 `[상위, 하위]` 순서로 넣는다.  
+> **대소문자 변경 및 제안 금지**.
 
 ### Common Tags
-- Hardware: `VESC`, `IMU`, `motor-control`, `hall-sensor`, `servo`
-- Software: `ROS`, `ROS2`, `python`, `cpp`
-- Type: `manual`, `getting-started`, `competition`
-- Events: `f1tenth`, `iccas`, `icra`, `roboracer`
-
-**Don't over-tag**: Use 3-5 relevant tags per post
+- 태그는 **Notion에 있는 것들을 모두 그대로** 사용한다 (대소문자 유지)
+- 필요 시 관련 태그를 **추가로 더할 수 있음**
 
 ---
 
@@ -423,7 +420,9 @@ Before finalizing a converted post, verify:
 - [ ] **폴더 구조**: `_posts/slug/slug.md` 형태인가?
 - [ ] **영문 번역본**: `-en.md`가 존재하는가?
 - [ ] **언어 메타**: `lang` / `lang_ref`가 한/영 모두에 존재하는가?
-- [ ] **카테고리 구조**: 상위/하위 순서가 맞는가?
+- [ ] **카테고리 구조**: Notion 상위/하위 그대로 들어갔는가?
+- [ ] **카테고리 대소문자**: Notion 표기 그대로인가?
+- [ ] **태그**: Notion 태그 전부 포함됐는가? (필요 시 추가 태그 포함)
 
 ---
 

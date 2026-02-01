@@ -1,5 +1,6 @@
 ---
-icon: fas fa-users
+title: Results
+icon: fas fa-trophy
 order: 6
 ---
 
@@ -208,49 +209,6 @@ order: 6
   }
 }
 </style>
-
-<!-- Advisor Section -->
-<div class="people-section advisor-section">
-  <h2>Advisor</h2>
-
-  {% for person_hash in site.data.people %}
-    {% assign person_id = person_hash[0] %}
-    {% assign person = person_hash[1] %}
-    {% if person.type == 'advisor' %}
-    <div class="person-card advisor-card">
-      {% if person.image %}
-      <img src="{{ person.image }}" alt="{{ person.name }}" class="person-image">
-      {% endif %}
-
-      <div class="person-name">{{ person.name }}</div>
-
-      {% if person.title %}
-      <div class="person-role">{{ person.title }}</div>
-      {% endif %}
-
-      {% if person.department %}
-      <div class="person-info"><strong>Dept:</strong> {{ person.department }}</div>
-      {% endif %}
-
-      {% if person.email %}
-      <div class="person-info"><strong>Email:</strong> <a href="mailto:{{ person.email }}">{{ person.email }}</a></div>
-      {% endif %}
-
-      {% if person.phone %}
-      <div class="person-info"><strong>Office:</strong> {{ person.phone }}</div>
-      {% endif %}
-
-      <div class="person-links">
-        {% if person.homepage %}
-        <a href="{{ person.homepage }}" target="_blank" title="Homepage">
-          <i class="fas fa-home"></i>
-        </a>
-        {% endif %}
-      </div>
-    </div>
-    {% endif %}
-  {% endfor %}
-</div>
 
 <!-- Competition History Section -->
 <div class="people-section">

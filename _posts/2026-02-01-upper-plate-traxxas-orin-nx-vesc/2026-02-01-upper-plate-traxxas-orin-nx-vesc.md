@@ -2,7 +2,7 @@
 title: Upper Plate 설계 및 장착 가이드 (Traxxas + Orin NX + VESC)
 author: yunho-lee
 date: 2026-02-01 12:00:00 +0900
-categories: [Hardware, Design]
+categories: [resources]
 tags: [3d-printing, traxxas, orin-nx, vesc, upper-plate]
 image:
   path: /assets/img/posts/upper-plate-traxxas-orin-nx-vesc/image.png

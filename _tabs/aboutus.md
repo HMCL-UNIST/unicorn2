@@ -35,31 +35,16 @@ order: 4
 
 ---
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 30px 0;">
-  <div>
-    <h2>Recent Results</h2>
-    <ul>
-      <li>🥈 <strong>2026 Roboracer PNU-HYUNSONG Championship</strong> - 2nd Place (2026/01/27)</li>
-      <li>🏆 <strong>2025 ICCAS Korea Championship</strong> - 1st Place (2025/11/04)</li>
-      <li>🥈 <strong>2025 ICRA RoboRacer</strong> - 2nd Place (2025/05/19)</li>
-      <li>🥉 <strong>2024 ICCAS Korea Championship</strong> - 3rd Place (2024/11/30)</li>
-      <li>🏆 <strong>2023 ICCAS Korea Championship</strong> - 1st Place (2023/10/17)</li>
-      <li><strong>2023 11th F1tenth Autonomous Grand Prix</strong> - 6th Place (2023/05/29)</li>
-      <li><strong>2022 10th F1tenth Autonomous Grand Prix</strong> - 5th Place (2022/05/23)</li>
-      <li><strong>The 1st F1tenth Korea Championship</strong> - 4th Place (2022/12/12)</li>
-    </ul>
-  </div>
-  <div>
-    <h2>Competition Management</h2>
-    <ul>
-      <li>2026 IFAC Roboracer Grand Prix, Busan, Korea (upcoming)</li>
-      <li>2026 Roboracer PNU-HYUNSONG Championship, Busan, Korea</li>
-      <li>2025 4th Korea Championship, Incheon, Korea</li>
-      <li>2024 3rd Korea Championship, Jeju, Korea</li>
-      <li>2024 IV Roboracer Grand Prix, Jeju, Korea</li>
-      <li>2023 2nd Korea Championship, Yeosu, Korea</li>
-    </ul>
-  </div>
+<div style="margin: 30px 0;">
+  <h2>Competition Management</h2>
+  <ul>
+    <li>2026 IFAC Roboracer Grand Prix, Busan, Korea (upcoming)</li>
+    <li>2026 Roboracer PNU-HYUNSONG Championship, Busan, Korea</li>
+    <li>2025 4th Korea Championship, Incheon, Korea</li>
+    <li>2024 3rd Korea Championship, Jeju, Korea</li>
+    <li>2024 IV Roboracer Grand Prix, Jeju, Korea</li>
+    <li>2023 2nd Korea Championship, Yeosu, Korea</li>
+  </ul>
 </div>
 
 ---
