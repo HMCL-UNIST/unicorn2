@@ -49,8 +49,6 @@ Steps:
 6. The VESC will reboot automatically after upload.
 7. Reconnect and continue using it.
 
-![VESC Tool Firmware Tab](/assets/img/posts/vesc-firmware-upgrade/firmware-tab.png)
-![Firmware Upload Icon](/assets/img/posts/vesc-firmware-upgrade/firmware-upload-icon.png)
 
 ---
 
@@ -58,7 +56,6 @@ Steps:
 
 If your PC is online, you can use the built-in **Firmware Archive** feature in VESC Tool.
 
-![VESC Tool Archive](/assets/img/posts/vesc-firmware-upgrade/firmware-archive.png)
 
 - It automatically detects your hardware and matches compatible firmware.
 - The default selection is the latest version, so **manually switch it to 6.05**.

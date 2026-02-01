@@ -195,7 +195,7 @@ Not all motors are suitable.
 - [VESC GitHub Repository](https://github.com/vedderb/bldc)
 
 ### Related posts
-- [Firmware Upgrade]({{ site.baseurl }}/posts/vesc-firmware-upgrade)
+- [Firmware Upgrade]({{ site.baseurl }}/posts/vesc-firmware-upgrade-guide)
 - [VESC Tool Download & Installation]({{ site.baseurl }}/posts/vesc-tools-download)
 
 ### Recommended video

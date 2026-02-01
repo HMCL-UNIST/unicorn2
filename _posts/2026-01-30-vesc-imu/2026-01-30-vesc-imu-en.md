@@ -8,7 +8,7 @@ lang: en
 lang_ref: vesc-imu
 ---
 
-VESC has a built‑in IMU, so you can use 6‑axis data without an external IMU module. To use it, you must first complete **[Firmware Upgrade]({{ site.baseurl }}/posts/vesc-firmware-upgrade/)**.
+VESC has a built‑in IMU, so you can use 6‑axis data without an external IMU module. To use it, you must first complete **[Firmware Upgrade]({{ site.baseurl }}/posts/vesc-firmware-upgrade-guide/)**.
 
 ---
 

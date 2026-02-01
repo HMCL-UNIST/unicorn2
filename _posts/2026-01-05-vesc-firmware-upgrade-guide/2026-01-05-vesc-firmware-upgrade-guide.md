@@ -49,8 +49,6 @@ VESC 공식 펌웨어 아카이브는 아래 GitHub 저장소에서 관리됩니
 6. 업로드가 끝나면 VESC가 자동으로 재부팅됩니다.
 7. 재부팅 후 다시 연결해 사용합니다.
 
-![VESC Tool Firmware Tab](/assets/img/posts/vesc-firmware-upgrade/firmware-tab.png)
-![Firmware Upload Icon](/assets/img/posts/vesc-firmware-upgrade/firmware-upload-icon.png)
 
 ---
 
@@ -58,7 +56,6 @@ VESC 공식 펌웨어 아카이브는 아래 GitHub 저장소에서 관리됩니
 
 PC가 인터넷에 연결된 상태라면 VESC Tool의 **Firmware Archive 기능**을 사용할 수 있습니다.
 
-![VESC Tool Archive](/assets/img/posts/vesc-firmware-upgrade/firmware-archive.png)
 
 - VESC 하드웨어를 자동으로 인식해 호환 펌웨어를 매칭해 줍니다.
 - 기본값은 최신 버전이므로 **Version을 수동으로 6.05로 변경**하는 것을 추천합니다.
