@@ -26,21 +26,26 @@
       url: "/posts/vesc-foc-tab-first/"
 
     - title: "VESC IMU"
+      url: "/posts/vesc-imu/"
 
     - title: "General Tab (Motor Settings)"
+      url: "/posts/vesc-general-tab-motor-settings/"
 
     - title: "PID Controllers"
+      url: "/posts/vesc-pid-controllers/"
 
     - title: "Enable Servo Output"
+      url: "/posts/vesc-enable-servo-output/"
 
-    - title: "Hokuyo LiDAR 전원선 납땜"
+    - title: "Hokuyo LiDAR Power cable build (TODO)"
 
-    - title: "SRX 조립하는 방법"
+    - title: "Build Serpent SRX8 (TODO)"
 
     - title: "서보 중앙 정렬 후 서보 혼 결합"
+      url: "/posts/servo-horn-after-alignment/"
 
     - title: "Upper plate 설계도 공유 및 세부사항"
-      url: "/posts/upper-plate-srx-nuc-vesc/"
+      url: "/posts/upper-plate-design-details/"
 
     - title: "샤시 및 상판에 부품 체결"
       url: "/posts/chassis-top-plate-assembly/"
@@ -48,12 +53,12 @@
     - title: "선 정리 및 마무리"
 
     - title: "ERPM gain 찾는 방법"
+      url: "/posts/erpm-gain-calibration/"
 
-    - title: "Servo parameter 찾는 방법"
+    - title: "How to find Servo parameter"
 
     - title: "base_link 기준 sensor TF 설정하기"
-
-    - title: "차량 configuration 찾는 방법"
+      url: "/posts/base-link-sensor-tf/"
 
 - section: "advanced"
   title: "Advanced"
