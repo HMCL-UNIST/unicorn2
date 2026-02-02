@@ -121,14 +121,16 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo: hmcl-unist/unicorn-racing
-    repo_id: R_kgDORBmreQ
+    repo_id: R_kgDORFiikA
     category: Announcements
-    category_id: DIC_kwDORBmrec4C1q9R
+    category_id: DIC_kwDORFiikM4C1xGm
     mapping: pathname
     strict: 0
-    input_position: top
-    lang: ko
+    input_position: bottom
+    lang: en
     reactions_enabled: 1
+
+
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:

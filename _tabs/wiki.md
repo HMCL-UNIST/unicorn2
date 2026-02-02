@@ -100,7 +100,7 @@ order: 0
 <div class="wiki-grid">
 {% for section in site.data.wiki.getting-started %}
   {% assign first_step = section.steps | where_exp: "s", "s.url != ''" | first %}
-  <div class="wiki-card">
+  <div class="wiki-card" id="{{ section.section }}">
     {% if first_step %}
       {% if first_step.external %}
     <a href="{{ first_step.url }}" target="_blank">
