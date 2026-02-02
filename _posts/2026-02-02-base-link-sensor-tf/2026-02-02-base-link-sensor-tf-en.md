@@ -745,9 +745,9 @@ Once TF is configured correctly, sensor data aligns automatically.
 
 ### References
 
-- [ROS TF Tutorial](http://wiki.ros.org/tf/Tutorials)
+- [ROS TF Tutorial](https://wiki.ros.org/tf/Tutorials)
 - [REP-105: Coordinate Frames](https://www.ros.org/reps/rep-0105.html)
-- [Quaternion Basics](http://wiki.ros.org/tf2/Tutorials/Quaternions)
+- [Quaternion Basics](https://wiki.ros.org/tf2/Tutorials/Quaternions)
 - [Cartographer ROS Integration](https://google-cartographer-ros.readthedocs.io/)
 
 ## SRX1 Full TF config

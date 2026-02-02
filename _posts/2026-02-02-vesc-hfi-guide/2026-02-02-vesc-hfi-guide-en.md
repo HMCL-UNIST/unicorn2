@@ -29,7 +29,6 @@ HFI helps VESC estimate rotor position more accurately at low speed for sensorle
 
 {% include embed/youtube.html id='H-6qzmeCNtw' %}
 
-![Silent HFI settings](/assets/img/posts/vesc-hfi-guide-new/silent-hfi.png)
 
 ## Wrap-up
 

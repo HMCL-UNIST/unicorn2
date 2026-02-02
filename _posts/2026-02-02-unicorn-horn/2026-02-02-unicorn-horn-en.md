@@ -2,7 +2,7 @@
 title: Unicorn Horn Build Guide
 author: yunho-lee
 date: 2026-02-02 10:00:00 +0900
-categories: [resources]
+categories: [build, advanced]
 tags: [3d-printing, blink, horn]
 image:
   path: /assets/img/posts/unicorn-horn/horn-parts.png

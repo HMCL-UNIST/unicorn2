@@ -33,8 +33,6 @@ HFI는 VESC에서 sensorless 모터의 극 위상을 저속에서도 정확히 �
 
 {% include embed/youtube.html id='H-6qzmeCNtw' %}
 
-![Silent HFI 설정 화면](/assets/img/posts/vesc-hfi-guide-new/silent-hfi.png)
-
 ## 마무리
 
 HFI는 sensorless 모터의 저속 정밀도를 보완하는 유용한 기능이지만, 소음과 발열이 크기 때문에 **짧은 테스트와 안전한 운용**이 중요합니다. 설정 후 저속 구간의 반응을 확인하고, 과열 징후가 보이면 즉시 중단하는 것을 권장합니다.

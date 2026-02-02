@@ -2,7 +2,7 @@
 title: "Adaptive Wheel Odometry: 동적 ERPM Gain 모델"
 author: hangyo-cho
 date: 2026-02-02 20:57:54 +0900
-categories: [racing stack]
+categories: [racing stack, state estimation]
 tags: [racing-stack, odometry, wheel-odometry, localization, erpm]
 image:
   path: /assets/img/posts/adaptive-wheel-odometry/overview.png
