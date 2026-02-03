@@ -5,15 +5,14 @@ date: 2026-02-02 12:00:00 +0900
 categories: [racing stack, environment]
 tags: [docker, vscode, racing-stack]
 image:
-  path: /assets/img/posts/racing-stack-build-docker-vscode/docker-logo.png
+  path: /assets/img/posts/racing-stack-build-docker-vscode/docker-vscode-logo.png
 lang: ko
 lang_ref: racing-stack-build-docker-vscode
 ---
 
 UNICORN Racing-stack을 Docker + VS Code 환경에서 빌드하고 실행하는 방법을 정리했습니다.
 
-![Docker](/assets/img/posts/racing-stack-build-docker-vscode/docker-logo.png)
-![VS Code](/assets/img/posts/racing-stack-build-docker-vscode/vscode.png)
+![Docker & VS Code](/assets/img/posts/racing-stack-build-docker-vscode/docker-vscode-logo.png)
 
 ## 1. Docker 설치
 
