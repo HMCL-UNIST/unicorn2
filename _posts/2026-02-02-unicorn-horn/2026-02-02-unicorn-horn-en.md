@@ -5,19 +5,22 @@ date: 2026-02-02 10:00:00 +0900
 categories: [build, advanced]
 tags: [3d-printing, blink, horn]
 image:
-  path: /assets/img/posts/unicorn-horn/horn-parts.png
+  path: /assets/img/posts/unicorn-horn/horn-overview-2026.png
 lang: en
 lang_ref: unicorn-horn
 ---
 
-![Unicorn Horn 3D Model](/assets/img/posts/unicorn-horn/horn-assembly.png)
+## Unicorn horn components
 
-The Unicorn horn consists of a total of 5 parts.
+The Unicorn horn consists of five parts.  
+![Horn parts](/assets/img/posts/unicorn-horn/horn-parts-2026.png)  
+*Horn parts layout*
 
-![Blink Disassembly](/assets/img/posts/unicorn-horn/blink-disassembly.png)
-_Blink disassembly_
+## Inserting the Blink RGB LED
 
-A Blink RGB LED was inserted into the hollow space of the horn after removing its plastic casing.
+A Blink RGB LED was placed inside the hollow horn after removing its plastic shell.  
+![Blink RGB LED assembly](/assets/img/posts/unicorn-horn/blink-assembly-2026.png)  
+*Blink RGB LED inserted into the horn cavity*
 
 The parts were assembled in order using super glue, which means they are difficult to separate once bonded.
 

@@ -3,88 +3,97 @@ title: "Chassis and Top Plate Assembly Guide"
 authors: [heedo-kim, yunho-lee]
 date: 2026-02-02 21:30:20 +0900
 categories: [build, beginner]
-tags: [Chassis, wiring]
+tags: [Chassiswiring, wiring]
 image:
-  path: /assets/img/posts/chassis-top-plate-assembly/chassis-empty.jpg
+  path: /assets/img/posts/chassis-top-plate-assembly/chassis-top-plate-assembly-hero.png
 lang: en
 lang_ref: chassis-top-plate-assembly
 ---
 
-## 1. Required items overview
+## Parts Preparation
 
-The photo below shows an empty SRX8 chassis.
+- Empty SRX8 chassis.  
+  ![Empty SRX8 chassis](/assets/img/posts/chassis-top-plate-assembly/srx8-empty.jpg)
+  *Empty SRX8 chassis*
 
-The next photo shows the components that will be mounted later.
+- All components needed for one car.  
+  ![All required parts](/assets/img/posts/chassis-top-plate-assembly/parts-full-set.jpg)
+  *Full set of required components*
 
-![Parts overview](/assets/img/posts/chassis-top-plate-assembly/parts-overview.jpg)
+- Power harnesses are unified to XT-60.  
+  ![LiDAR power XT-60](/assets/img/posts/chassis-top-plate-assembly/lidar-power-xt60.png)  
+  *LiDAR and BEC inputs/outputs converted to XT-60*  
+  ![XT-60 to servo/NUC adapters](/assets/img/posts/chassis-top-plate-assembly/xt60-to-servo-barrel.png)  
+  *XT-60 adapters for servo 3-pin and NUC barrel jack*
 
-The following parts were modified so they can be used in our setup. Most connectors were converted to XT-60.
+- The wiring diagram is for understanding only; **do not pre-assemble yet.**  
+  ![Overall wiring diagram](/assets/img/posts/chassis-top-plate-assembly/wiring-overview-2026.png)
+  *Overall wiring diagram*
 
-| ![LiDAR power XT-60](/assets/img/posts/chassis-top-plate-assembly/lidar-xt60.png)<br>LiDAR power cable converted to XT-60. | ![Matek BEC XT-60](/assets/img/posts/chassis-top-plate-assembly/matek-bec-xt60.png)<br>Matek BEC input/output converted to XT-60. |
-| --- | --- |
-| ![XT-60 to Servo 3pin](/assets/img/posts/chassis-top-plate-assembly/xt60-to-servo.png)<br>XT-60 to Servo 3‑pin connector. | ![XT-60 to Barrel Jack](/assets/img/posts/chassis-top-plate-assembly/xt60-to-barrel.png)<br>XT-60 to 5.5mm × 2.5mm barrel jack. |
+## Lower Plate Assembly
 
-Below is the overall wiring diagram. It is for reference only, **do not assemble based on this beforehand.**
+### Mounting the VESC
 
-![Wiring diagram](/assets/img/posts/chassis-top-plate-assembly/wiring-diagram.png)
+We machined additional holes in the aluminum lower plate for VESC mounting and positioned the VESC using those holes.  
+![Lower plate holes](/assets/img/posts/chassis-top-plate-assembly/lower-plate-holes-2026.png)
+*Machined holes for VESC mounting*
 
-## 2. Lower plate machining and VESC mounting
+To prevent the top cover from bending, washers were added so bolts/nuts are not over-tightened.  
+![VESC with washers](/assets/img/posts/chassis-top-plate-assembly/vesc-washer-2026.jpg)
+*VESC fastened with washers*
 
-The aluminum lower plate needs additional holes. We chose to mount the VESC directly on the lower plate, so we drilled the mounting holes and installed the VESC based on them.
+> After mounting, we confirmed the driveshaft travel does not interfere with the VESC.
+{: .prompt-warning }
 
-| ![Lower plate hole positions](/assets/img/posts/chassis-top-plate-assembly/lower-plate-hole.png) | ![VESC mounting position](/assets/img/posts/chassis-top-plate-assembly/lower-plate-vesc.jpg) |
-| --- | --- |
+### Battery Velcro Strap Mount
 
-If the VESC bolts and nuts are tightened too much, the top plate can deform. Since it must not detach during driving, we used washers to minimize deformation.
+Using existing holes, we fixed a Velcro strap so the battery can be secured later.  
+![Velcro mount](/assets/img/posts/chassis-top-plate-assembly/velcro-mount-2026.jpg)
+*Velcro strap mounted to the lower plate*
 
-![Washer use](/assets/img/posts/chassis-top-plate-assembly/vesc-washer.jpg)
+### Mounting the Servo Motor
 
-The VESC position overlaps with the shaft area, so you must **check for interference across the actual shaft range**.
+A support piece removes the height gap, and the servo cable is routed inward.  
+![Servo support and mount](/assets/img/posts/chassis-top-plate-assembly/servo-support-2026.png)
+![Servo mounting example](/assets/img/posts/chassis-top-plate-assembly/servo-mount-2026.png)
+*Servo support and mounting example*
 
-## 3. Velcro mount for battery fixing
+Center the servo first, then attach the horn. See [{{ site.baseurl }}/posts/servo-horn-after-alignment/]({{ site.baseurl }}/posts/servo-horn-after-alignment/) for details.
 
-The photo below shows a structure that uses the lower plate holes to attach Velcro for future battery fixing.
+### Motor Installation
 
-![Velcro mount](/assets/img/posts/chassis-top-plate-assembly/velcro-mount.jpg)
+Mount the DC motor after setting the gap between the pinion gear and the drivetrain gear.  
+![Pinion gear gap](/assets/img/posts/chassis-top-plate-assembly/motor-pinion-2026.jpg)
+*Pinion-to-driveshaft gear gap*
 
-## 4. Servo motor installation
+Gap adjustment steps: [{{ site.baseurl }}/posts/motor-pinion-gear-gap-adjustment/]({{ site.baseurl }}/posts/motor-pinion-gear-gap-adjustment/).
 
-Install the servo as shown below. The small plastic part is a support to remove play caused by servo height and is usually included with the chassis.
+### Standoff Nuts
 
-![Servo support](/assets/img/posts/chassis-top-plate-assembly/servo-support.png)
+Once the lower assembly is done, install standoff nuts to support the top plate.  
+![Standoff nuts](/assets/img/posts/chassis-top-plate-assembly/standoff-bolts-2026.jpg)
+*Standoff nuts installed*
 
-| ![Servo installation 1](/assets/img/posts/chassis-top-plate-assembly/servo-mount-1.jpg) | ![Servo installation 2](/assets/img/posts/chassis-top-plate-assembly/servo-mount-2.jpg) |
-| --- | --- |
+## Top Plate Assembly
 
-We recommend routing the servo cable **toward the inside**. After wiring, center the servo and then mount the servo horn.
+### Mounting the IMU
 
-## 5. Top plate assembly sequence
+Attach the IMU to the underside of the top plate first.  
+![IMU mount](/assets/img/posts/chassis-top-plate-assembly/imu-mount-2026.png)
+*IMU mounted under the top plate*
 
-1. Install the DC motor and set the proper gap between the pinion gear and the spur gear.
-   - Gap adjustment tip: [{{ site.baseurl }}/posts/motor-pinion-gear-gap-adjustment/]({{ site.baseurl }}/posts/motor-pinion-gear-gap-adjustment/)
+### Mounting the NUC
 
-   ![Motor pinion gear](/assets/img/posts/chassis-top-plate-assembly/motor-pinion.jpg)
+Align the NUC with the two mounting holes and use a nut/washer stack to prevent the bottom from lifting.  
+![NUC mount](/assets/img/posts/chassis-top-plate-assembly/nuc-mount-2026.png)
+*NUC mounting with nut/washer stack*
 
-2. At this point, the first-stage lower plate assembly is complete. Assemble the standoff bolts for the top plate as shown below.
+### Mounting the LiDAR
 
-   ![Standoff bolts](/assets/img/posts/chassis-top-plate-assembly/standoff-bolts.jpg)
-
-3. The top plate will carry the LiDAR, NUC, and IMU. Since the IMU mounts under the top plate, install it first.
-
-   | ![IMU mount position](/assets/img/posts/chassis-top-plate-assembly/imu-mount.png) | ![IMU mount example](/assets/img/posts/chassis-top-plate-assembly/imu-mount-photo.jpg) |
-   | --- | --- |
-
-4. Mount the NUC on the top plate. The NUC has two mounting holes, but using only bolts may lift the NUC base. We used **nuts and washers** to create the required spacing.
-
-   | ![NUC mount structure](/assets/img/posts/chassis-top-plate-assembly/nuc-mount.png) | ![NUC spacing](/assets/img/posts/chassis-top-plate-assembly/nuc-spacer.png) |
-   | --- | --- |
-
-5. Mount the LiDAR.
-
-   ![LiDAR mounting](/assets/img/posts/chassis-top-plate-assembly/lidar-mount.jpg)
-
-6. Basic chassis assembly is complete. The next steps must be done **together with cable management**.
+Finally, secure the LiDAR on the top plate.  
+![LiDAR mount](/assets/img/posts/chassis-top-plate-assembly/lidar-mount-2026.jpg)
+*LiDAR mounted on the top plate*
 
 ## Wrap-up
 
-Chassis and top-plate assembly requires careful consideration of wiring, interference, and fastening. Check for mechanical interference, and use washers/spacers to prevent damage while keeping the assembly rigid. After mounting, perform cable management to ensure stable operation.
+Standardizing power connectors, checking mechanical interference, and setting proper clamping force are all critical for this assembly. Washers protected the VESC housing, and precise alignment/gaps were set for the servo and motor before tightening. After standoffs and top plate installation, finish with tidy cable management to prevent vibration or disconnection during driving.
