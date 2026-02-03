@@ -1,23 +1,26 @@
 ---
-title: Unicorn Horn 제작 과정
+title: Unicorn Horn 제작 과정 가이드
 author: yunho-lee
 date: 2026-02-02 10:00:00 +0900
 categories: [build, advanced]
 tags: [3d-printing, blink, horn]
 image:
-  path: /assets/img/posts/unicorn-horn/horn-assembly.png
+  path: /assets/img/posts/unicorn-horn/horn-overview-2026.png
 lang: ko
 lang_ref: unicorn-horn
 ---
 
-![Horn 파트 구성](/assets/img/posts/unicorn-horn/horn-parts.png)
+## Unicorn horn 구성
 
-Unicorn horn은 총 5개의 파트로 이루어져 있습니다.
+Unicorn horn은 총 5개의 파트로 이루어져 있습니다.  
+![Horn 파트 구성](/assets/img/posts/unicorn-horn/horn-parts-2026.png)
+*Horn 파트 구성*
 
-![Blink 분해](/assets/img/posts/unicorn-horn/blink-disassembly.png)
-_blink 분해_
+## Horn에 Blink RGB LED 넣고 결합
 
-Horn의 빈 공간에 Blink RGB LED를 플라스틱 부분을 제거한 후 넣어주었습니다.
+Horn의 빈 공간에 Blink RGB LED를 플라스틱 부분을 제거한 후 넣어주었습니다.  
+![Blink 분해 및 조립](/assets/img/posts/unicorn-horn/blink-assembly-2026.png)
+*Blink RGB LED 삽입 예시*
 
 순서대로 순간 접착제를 사용하여 붙여주어 사용했습니다. 그렇기 때문에 한번 결합 시 분리하기 어렵습니다.
 
