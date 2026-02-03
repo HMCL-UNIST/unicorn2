@@ -1,6 +1,6 @@
 ---
 title: "Build Racing-stack with Docker and VS Code"
-author: inyeong-choi
+author: inyoung-choi
 date: 2026-02-02 12:00:00 +0900
 categories: [racing stack, environment]
 tags: [docker, vscode, racing-stack]
